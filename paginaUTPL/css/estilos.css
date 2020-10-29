@@ -1,0 +1,113 @@
+/*La hoja de estilos siempre ataca a las etiquetas o clases*/
+/*body{ background-color: chartreuse;}*/
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:rgb(236,236,236);
+    /*Si no encuentra verdana intenta poner geneva*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header.cabeceraPrincipal{
+   background-color: #202355 ;
+    color: #ffffff;
+  
+    border-bottom: 5px solid #000000;
+}
+header.cabeceraPrincipal img{
+    width: 5em;
+    height: 5em;
+    display: inline-block;
+
+}
+header.cabeceraPrincipal h1{
+    font-size: 1em;
+   padding: 3em ;
+   width: 60%;
+   display: inline-block;
+   text-align: center;
+   text-shadow: rgb(32, 32, 32)2px 2px 1px;
+}
+section.sliderPrincipal{
+    background-color: #191970;
+    
+}
+section.sliderPrincipal img{
+    display: center;
+    padding-left: 1em;
+    width: 5em;
+    height: 5em;
+ 
+}
+section.sliderPrincipal h1{
+    font-size: 2em;
+   text-align: center;
+
+
+}
+#navegador ul{
+   list-style-type: none;
+   text-align: justify;
+
+}
+/*estilos para cada uno de los elementos de la lista*/
+#navegador li{
+    
+    display: inline;
+    /*indicamos un margen entre los elementos*/
+    margin: 0 10px 0 0;
+    
+ }
+ /*le quitamos el subrayado a los enlaces */
+ #navegador li a{
+ text-decoration: none;
+ margin-left: 2em;
+ }
+ /*para definir un estilo cuando el raton pasa sobre el enlace*/
+ #navegador li a:hover{
+    background-color: #c3db39;
+    color: #ffffff;
+    
+ }
+ #conjuntoServicios{
+ 
+     margin-left: 15em;
+     height: 28em;
+     width: 78em;
+    
+ }
+#servicios1,#servicios3 , #servicios2{
+    margin-left: 5em;
+    height: 15em;
+    width: 20em;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, rgb(241, 241, 21) 10%, rgb(163, 172, 87) 90%);
+    text-align: center;
+}
+#servicios1 h2,#servicios3 h2 , #servicios2 h2{
+  margin-top: 1em;
+}
+#servicios4, #servicios5{
+    margin-top: 1em;
+    margin-left: 10em;
+    height: 15em;
+    width: 28em;
+    display: inline-block;
+    background: -webkit-linear-gradient(90deg, rgb(241, 241, 21) 10%, rgb(163, 172, 87) 90%);
+    text-align: center;
+}
+#videoMatricula {
+    margin-left: 10em;
+    text-align: center;
+}
+
+
+
+section#servicios{
+
+}
+/*em es adaptativa px es como que va en tales
+ pix ni se hara peque;o el texto*/
+ 
