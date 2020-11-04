@@ -50,12 +50,13 @@ section.sliderPrincipal h1{
 #navegador ul{
    list-style-type: none;
    text-align: justify;
+   background-color: black;
 
 }
 /*estilos para cada uno de los elementos de la lista*/
 #navegador li{
     
-    display: inline;
+    display: inline-block;
     /*indicamos un margen entre los elementos*/
     margin: 0 10px 0 0;
     
@@ -72,16 +73,15 @@ section.sliderPrincipal h1{
     
  }
  #conjuntoServicios{
- 
-     margin-left: 15em;
+     margin-left: 1em;
      height: 28em;
-     width: 78em;
+     width: 100%;
     
  }
 #servicios1,#servicios3 , #servicios2{
     margin-left: 5em;
     height: 15em;
-    width: 20em;
+    width: 20%;
     display: inline-block;
     background: -webkit-linear-gradient(90deg, rgb(241, 241, 21) 10%, rgb(163, 172, 87) 90%);
     text-align: center;
@@ -93,13 +93,13 @@ section.sliderPrincipal h1{
     margin-top: 1em;
     margin-left: 10em;
     height: 15em;
-    width: 28em;
+    width:20%;
     display: inline-block;
     background: -webkit-linear-gradient(90deg, rgb(241, 241, 21) 10%, rgb(163, 172, 87) 90%);
     text-align: center;
 }
 #videoMatricula {
-    margin-left: 10em;
+    margin-left: 1em;
     text-align: center;
 }
 
