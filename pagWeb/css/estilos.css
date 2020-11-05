@@ -16,12 +16,13 @@ body {
 }
 
 header.cabeceraPrincipal {
-    background-color: darkgreen;
+    /*background-color: rgb(247, 109, 17);*/
+    background: -webkit-linear-gradient(90deg, rgb(236, 236, 231) 10%, rgb(53, 194, 48) 90%);
     color: #ffffff;
     width: 90%;
     margin: 0 auto;
     border-bottom: 5px solid #000000;
-    padding-top: 2em;
+
 
 }
 main{
@@ -37,12 +38,11 @@ header.cabeceraPrincipal img {
     /* arriba y abajho tenga 1em y a los lados 1em*/
     padding: 1em 1em;
     vertical-align: top;
-    background: -webkit-linear-gradient(90deg, rgb(241, 241, 21) 10%, rgb(163, 172, 87) 90%);
+   
 }
 
 header.cabeceraPrincipal h1 {
-    /*Tamanio de la fuente*/
-    
+    /*Tamanio de la fuente*/ 
     font-size: 1em;
     padding: 3em;
     width: 60%;
@@ -68,8 +68,8 @@ nav.menuPrincipal a {
 }
 /*para definir un estilo cuando el raton pasa sobre el enlace*/
 nav.menuPrincipal a:hover {
-    background-color: rgb(92, 221, 92);
-    color: rgb(14, 82, 40)
+    background-color: rgb(88, 241, 88);
+   
 }
 
 section.sliderPrincipal {
@@ -80,7 +80,7 @@ section.sliderPrincipal {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    background-color:red;
+    background-color:rgb(155, 155, 145);
 }
 
 .servicios article.noticias{
@@ -89,16 +89,16 @@ section.sliderPrincipal {
 }
 
 .servicios article.noticias h3{
-    font-size: 2em;
+    font-size: 1.7em;
     padding: 1em 0 0 0;
-    color: rgb(4, 146, 146);
+    color: rgb(255, 251, 11);
 }
 
 .servicios article.noticias p{
     text-align: justify;
     padding: 1em 1em;
     font-size: 0.9em;
-    color: rgb(58, 59, 58);
+    color: rgb(223, 233, 223);
 }
 
 .piePag{
@@ -112,6 +112,15 @@ section.sliderPrincipal {
 .piePag h6{
     padding: 2em 0;
 
+}
+.ponentes article.ponent p{
+    text-align: left;
+    padding: 1em 1em;
+    font-size: 0.9em;
+    color: rgb(223, 233, 223);
+}
+.ponentes h1{ 
+    color: rgb(240, 224, 6);
 }
 
 /*un mediaquery son como condicionales, el siguiente solo va a ser cundod etecte la resolucion del tama;o*/
