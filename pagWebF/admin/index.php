@@ -4,8 +4,7 @@ $listaRol[1] = "Administrador";
 $listaRol[2] = "Editor";
 $adminconexion = new clase_mysqli7;
 $adminconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
-?>
-<?php
+
 $conexion = mysqli_connect("localhost", "root", "", "ingweb2021db");
 mysqli_set_charset($conexion, "utf8");
 $inscritos2 = "SELECT * FROM inscritos";
@@ -24,7 +23,7 @@ $inscritos2 = "SELECT * FROM inscritos";
 
 <body>
 
-	<!-- header para una cabecera, donde va la introduccion de la p[agina-->
+	<!-- header para una cabecera, donde va la introduccion de la pagina-->
 	<header class="cabeceraPrincipal">
 		<!--Si no carga la imgaen encima del raton sale lo q dice alt-->
 		<!-- el alt es para el tema de accesibilidad y usabilidad-->
@@ -33,21 +32,23 @@ $inscritos2 = "SELECT * FROM inscritos";
 	</header>
 	<nav class="menuPrincipal">
 		<a href="../index.html">INICIO</a>
-		<a class ="ins" href="ponentes.html" >INSCRITOS</a>
+		<a class="ins" href="ponentes.html">INSCRITOS</a>
 		<a href="campus.html">REPORTES</a>
 		<a href="tarifas.html">ESTADISTICAS</a>
 		<a href="seguridad/salir.php?salir=true">CERRAR SESIÓN</a>
 
 	</nav>
+
 	<section class="smsAdmin">
-		<h2>Bienvenid@ <?php echo $_SESSION['nombresUser'];?></h2>
-		
+		<h2>Bienvenid@ <?php echo $_SESSION['nombresUser']; ?></h2>
 		<?php
 		// concatenar
-	
 		echo  $listaRol[$_SESSION['rolUser']];
 		?>
 	</section>
+
+		
+
 	<section class="containerTable">
 		<section class="titleTable"> Datos de inscritos</section>
 		<section class="headerTable">id</section>
@@ -60,7 +61,6 @@ $inscritos2 = "SELECT * FROM inscritos";
 
 		<?php
 		$resultado = mysqli_query($conexion, $inscritos2);
-
 		while ($row = mysqli_fetch_assoc($resultado)) { ?>
 			<!--Accede mediante php-->
 			<section class="tableItem"><?php echo $row["id"]; ?></section>
@@ -70,9 +70,6 @@ $inscritos2 = "SELECT * FROM inscritos";
 			<section class="tableItem"><?php echo $row["pais"]; ?></section>
 			<section class="tableItem"><?php echo $row["ciudad"]; ?></section>
 			<section class="tableItem"><?php echo $row["profesion"]; ?></section>
-
-
-
 
 		<?php } ?>
 	</section>

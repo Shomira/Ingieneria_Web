@@ -67,14 +67,14 @@ class clase_mysqli7{
 		echo "<tr>";
 		for ($i=0; $i < $this->numcampos() ; $i++) { 
 			//echo "<td>".$this->nombrecampo($i)."</td>";
-			echo  "<td  style='font-size:20px; background-color: #708090;'>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
+			echo  "<td>".mysqli_fetch_field_direct($this->Consulta_ID, $i)->name."</td>";
 		}
 		echo "</tr>";
 		while ($row=mysqli_fetch_array($this->Consulta_ID)) {
 			echo "<tr>";
 			for ($i=0; $i < $this->numcampos(); $i++) { 
 
-				echo "<td  style='font-size:20px; background-color: #CDCDCD;' >".utf8_encode($row[$i])."</td>";
+				echo "<td>".utf8_encode($row[$i])."</td>";
 			}
 			echo "</tr>";
 		}

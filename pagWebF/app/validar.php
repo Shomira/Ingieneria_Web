@@ -32,7 +32,7 @@ if (!$listaUser[0]) {
 if ($_SESSION['rolUser']==1) {
 	echo "<script>location.href='../admin/index.php'</script>";
 }
-// si la variable de sesion rol es igual a 2
+// si la variable de sesion rol es igual a 2 sale de la página
 if ($_SESSION['rolUser']==2) {
 	echo "<script>location.href='../admin/index.html'</script>";
 

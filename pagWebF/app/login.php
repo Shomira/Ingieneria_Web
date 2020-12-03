@@ -41,9 +41,38 @@
         </form>
         
     </main>
+    <footer class="piePag">
+        <section class="pieIzq">
+            <img src="../imgs/logo-utpl.png">
+            <h3 color="green">Acerca de CLEI </h3>
     
-    <footer class="piePagina">
-        <h6>Derechos Reservados UTPL 2020 by: @snrosales</h6>
+            <p class="footer-links">
+                <a href="index.html">Inicio</a> |
+                <a href="internas/tarifas.html">Tarifas</a> |
+                <a href="internas/contactos.html">Contáctos</a>
+            </p>
+        </section>
+        <section class="pieCent">
+            <p>Derechos Reservados UTPL 2020 by: @snrosales</p>
+            <section>
+                <i class=""></i>
+                  <h3><strong>Contactos</strong></h3>
+                 
+                    <p><strong>Chair General:</strong> Armando Cabrera - UTPL</p>
+                    <p></p>
+                    <i class=""></i>
+                <p><b>Correo:</b> clei2020@utpl.edu.ec</p>
+            
+                <i class=""></i>
+                <p><b>Teléfono:</b> (+593) 07 3701444 ext. 2510</p>
+            </section>
+        </section>
+        <section class="pieDer">
+            <p class="company">
+                <span>XLVI CONFERENCIA LATINOAMERICANA DE INFORMÁTICA</span> Ingeniería de Software | Informática y Sociedad | Educación Superior en
+                Computación
+            </p>
+        </section>
     </footer>
 </body>
 </html>

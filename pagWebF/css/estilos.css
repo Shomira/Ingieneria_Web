@@ -380,6 +380,18 @@ form button {
 .smsAdmin{
     text-align: center;
 }
+.contactos h1 {
+    color: rgb(63, 63, 170);
+}
+.contactos {
+    padding: 1em 0  0 3em;
+}
+.contactos p{
+    
+}
+
+
+
 /*------------------------- FOOTER*/
 /*=================================*/
 footer {
@@ -406,30 +418,30 @@ footer {
     margin-top: 10px;
 }
 
-.piePag .footer-left,
-.piePag .footer-center,
-.piePag .footer-right {
+.piePag .pieIzq,
+.piePag .pieCent,
+.piePag .pieDer {
     display: inline-block;
     vertical-align: top;
 }
 
 
-/* Footer left */
+/* Izquierda*/
 
-.piePag .footer-left {
+.piePag .pieIzq {
     width: 30%;
 }
 
 .piePag h3 {
     color: #ffffff;
-    font: bold 20px 'Cookie', cursive;
+    font: bold 20px 'Segoe UI';
     margin: 0;
 }
 
 
-/* The company logo */
+/* logo UTPL */
 
-.piePag .footer-left img {
+.piePag .pieIzq img {
     width: 45%;
 }
 
@@ -438,7 +450,7 @@ footer {
 }
 
 
-/* Footer links */
+/* pie Links */
 
 .piePag .footer-links {
     color: #ffffff;
@@ -462,11 +474,11 @@ footer {
 
 /* Footer Center */
 
-.piePag .footer-center {
+.piePag .pieCent {
     width: 35%;
 }
 
-.piePag .footer-center i {
+.piePag .pieCent i {
     background-color: #33383b;
     color: #ffffff;
     font-size: 25px;
@@ -479,7 +491,7 @@ footer {
     vertical-align: middle;
 }
 
-.piePag .footer-center p {
+.piePag .pieCent p {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
@@ -488,13 +500,13 @@ footer {
 }
 
 
-/* Footer Right */
+/* Footer Derecho */
 
-.piePag .footer-right {
+.piePag .pieDer {
     width: 30%;
 }
 
-.piePag .footer-company-about {
+.piePag .company {
     line-height: 20px;
     color: #92999f;
     font-size: 13px;
@@ -502,7 +514,7 @@ footer {
     margin: 0;
 }
 
-.piePag .footer-company-about span {
+.piePag .company span {
     display: block;
     color: #ffffff;
     font-size: 18px;
