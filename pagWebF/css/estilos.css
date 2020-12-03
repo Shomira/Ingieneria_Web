@@ -72,6 +72,9 @@ nav.menuPrincipal a {
     padding: 1px 30px;
     text-decoration: none;
 }
+.menuPrincipal .a ins{
+    background-color: white;
+}
 /*para definir un estilo cuando el raton pasa sobre el enlace*/
 nav.menuPrincipal a:hover {
     background-color: rgb(238, 240, 238);
@@ -94,7 +97,7 @@ section.slider {
     /* un espacio al ul*/
     width: 300%;
     /*para animar, que dure 20 segundos y que sea infinito*/
-    animation: cambio 10s infinite;
+    animation: siguiente 10s infinite;
     /*Cuando lelgue al 100 regresa desde 55, 45*/
     animation-direction: alternate;
 }
@@ -114,7 +117,7 @@ del 20% al 25%, el tiempo que tarda la transicion de una imagen a otra
 del 25% al 45% es el tiempo qeu va aestar la segunda imagen
 
 */
-@keyframes cambio{
+@keyframes siguiente{
 0% {margin-left: 0;}
 20%{margin-left: 0;}
 
@@ -158,31 +161,18 @@ del 25% al 45% es el tiempo qeu va aestar la segunda imagen
     font-size: 0.9em;
     color: black;
 }
-.segundPart h1{
+.indexSegundPart h1{
     padding: 1em;
     text-align: center;
     color: rgb(95, 91, 91);
 }
-.segundPart p{
+.indexSegundPart p{
     text-align: center;
 }
-.segundPart img{
+.indexSegundPart img{
     padding: 2em 5.5em;
 }
 
-.piePag img{
-    width: 100%;
-    /*
-    background-color: rgb(31, 32, 32);
-    color: rgb(96, 97, 99);
-    text-align: center;
-    height: 50px;
-    */
-}
-.piePag h6{
-    padding: 2em 0;
-
-}
 
 .ponentes .ponent{
     padding-left: 1em;
@@ -235,9 +225,9 @@ del 25% al 45% es el tiempo qeu va aestar la segunda imagen
         display: inline-block;
         text-shadow: rgb(32, 32, 32)2px 2px 1px;
     }
-    .segundPart img {
+    .indexSegundPart img {
         width: 80%;
-        padding: 2em 5.5em;
+        
 
     }
 }
@@ -276,194 +266,13 @@ del 25% al 45% es el tiempo qeu va aestar la segunda imagen
         display: block;
         margin: 0 auto;
     }
-    .segundPart img {
+    .indexSegundPart img {
         width: 70%;
         padding: 1em 5.5em;
 
     }
-
-}
-/* The footer is fixed to the bottom of the page -------------------------------*/
-
-footer{
-	position: fixed;
-	bottom: 0;
 }
 
-@media (max-height:800px){
-	footer { position: static; }
-	header { padding-top:40px; }
-}
-
-
-.piePag{
-	background-color: #2c292f;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
-}
-
-.piePag .footer-left,
-.piePag .footer-center,
-.piePag .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.piePag .footer-left{
-	width: 30%;
-}
-
-.piePag h3{
-	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
-	margin: 0;
-}
-
-/* The company logo */
-
-.piePag .footer-left img{
-	width: 50%;
-}
-
-.piePag h3 span{
-	color:  #e0ac1c;
-}
-
-/* Footer links */
-
-.piePag .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-}
-
-.piePag .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.piePag .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.piePag .footer-center{
-	width: 35%;
-}
-
-
-.piePag .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.piePag .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.piePag .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
-
-.piePag .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.piePag .footer-center p a{
-	color:  #e0ac1c;
-	text-decoration: none;;
-}
-
-
-/* Footer Right */
-
-.piePag .footer-right{
-	width: 30%;
-}
-
-.piePag .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.piePag .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.piePag .footer-icons{
-	margin-top: 25px;
-}
-
-.piePag .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
-
-
-@media (max-width: 880px) {
-
-	.piePag .footer-left,
-	.piePag .footer-center,
-	.piePag .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.piePag .footer-center i{
-		margin-left: 0;
-	}
-
-}
 form{
 	width:300px;
 	padding:40px;
@@ -519,9 +328,8 @@ form button {
     
 }
 
-
 /*Tarifas*/
-.tarifasS {
+.tarifas {
     text-align: left;
     margin: 0em 5em;
 }
@@ -532,8 +340,171 @@ form button {
 .containerTable{
     width: 90%;
     background: white ;
-    margin: 50px auto;
-    /*Definir la cantidad de columnas, cada columna ocupa el 10%*/
-    grid-template-columns: repeat(6, 13%) ;
+    margin: 10px 100px ;
+   box-shadow: 0 0 10px;
+
     display: grid;
+    /*Definir la cantidad de columnas, cada columna ocupa el 10% o 1fr o fraccion*/
+    grid-template-columns: repeat(7, 1fr) ;
+    /*Definir el alto de cada fila*/
+    grid-auto-rows: 50px;
+    
+}
+.titleTable{
+    /*Donde Empieza y donde vaa  terminar*/
+    grid-column-start: 1;
+    grid-column-end: 8;
+    color:white;
+    display: flex;
+    justify-content: center;
+
+    background:rgb(17, 155, 40);
+    font-size: 1.5em;
+    font-weight: bold;
+
+
+}
+.headerTable, .tableItem{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.headerTable{
+    
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #98ce98;
+}
+/*Mensaje Administrador*/
+.smsAdmin{
+    text-align: center;
+}
+/*------------------------- FOOTER*/
+/*=================================*/
+footer {
+
+    background-image: url(../imgs/fondoUtpl.jpg);
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.piePag {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: 12px sans-serif;
+    padding: 40px 40px 50px 50px;
+    margin-top: 10px;
+}
+
+.piePag .footer-left,
+.piePag .footer-center,
+.piePag .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* Footer left */
+
+.piePag .footer-left {
+    width: 30%;
+}
+
+.piePag h3 {
+    color: #ffffff;
+    font: bold 20px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+/* The company logo */
+
+.piePag .footer-left img {
+    width: 45%;
+}
+
+.piePag h3 span {
+    color: #e0ac1c;
+}
+
+
+/* Footer links */
+
+.piePag .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.piePag .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.piePag .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Center */
+
+.piePag .footer-center {
+    width: 35%;
+}
+
+.piePag .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.piePag .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    padding: 50px 0px 0px 0px;
+    margin: 0;
+}
+
+
+/* Footer Right */
+
+.piePag .footer-right {
+    width: 30%;
+}
+
+.piePag .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.piePag .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
 }

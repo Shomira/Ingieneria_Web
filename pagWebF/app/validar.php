@@ -4,7 +4,6 @@ extract($_POST);
 // md5 Funcion de encriptacion
 $clave=md5($clave);
 
-
 session_start();
 
 
@@ -29,7 +28,14 @@ if (!$listaUser[0]) {
     $_SESSION['rolUser'] = $listaUser[5];
     $_SESSION['local_path'] = $local_path;
     // salgase y vaya a la carpeta admin y vaya a index.php
+}
+if ($_SESSION['rolUser']==1) {
 	echo "<script>location.href='../admin/index.php'</script>";
+}
+// si la variable de sesion rol es igual a 2
+if ($_SESSION['rolUser']==2) {
+	echo "<script>location.href='../admin/index.html'</script>";
+
 }
 
 ?>
