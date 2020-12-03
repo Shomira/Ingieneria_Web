@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 IngWeb</title>
+    <!-- ../ significa que sale y busca la carpeta Las hojas de estilos atacan a las etiquets o clases-->
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- header para una cabecera, donde va la introduccion de la p[agina-->
+    <header class="cabeceraPrincipal">
+        <!--Si no carga la imgaen encima del raton sale lo q dice alt-->
+        <!-- el alt es para el tema de accesibilidad y usabilidad-->
+        <img src="../imgs/cleiLogo.png" alt="logotipo del evento">
+        <h1>V Conferencia de desarrollo de software UTPL 2021</h1>
+    </header>
+    <nav class="menuPrincipal">
+        <a href="../index.html">INICIO</a>
+        <a href="ponentes.html">PONENTES</a>
+        <a href="campus.html">CAMPUS</a>
+        <a href="tarifas.html">TARIFAS</a>
+        <a href="contactos.html">CONTACTOS</a>
+        <a href="../app/registro.php">REGISTRO</a>
+        <a href="../app/login.php">LOGIN</a>
+
+
+    </nav>
+    <!--Class es mas usado en css-->
+    <main>
+        <section >
+            <h1>Información de los Ponentes</h1>
+        </section>
+    </main>
+
+
+
+    <!--los id son propios de java script-->
+    <section class="ponentes">
+        <article class="ponent">
+            <h1>Dra. Claudia Bauzer Medeiros</h1>
+            <img style=float:left; class="ponente1" src="../imgs/claudiaBauzer.jpg" />
+            <p>
+                Claudia Bauzer Medeiros es profesora a tiempo completo de Bases de Datos en el Instituto de Computación
+                de la Universidad de Campinas (Unicamp), Brasil y miembro de la Academia Brasileña de Ciencias. Ella ha
+                recibido reconocimientos en Brasil y a nivel internacional en investigación, enseñanza y también por su
+                trabajo en el fomento de la participación de las mujeres en actividades relacionadas con las tecnologías
+                de la información.
+                Su investigación se centra en el diseño y desarrollo de bases de datos científicas. Su principal interés
+                radica en afrontar los retos que plantean las grandes aplicaciones del mundo real, que requieren el
+                manejo de fuentes de datos distribuidas y muy heterogéneas.
+                Es Comendadora de la Orden Brasileña del Mérito Científico, Dra. Honoris Causa de la Universidad Antenor
+                Orrego, Perú, y de la Universidad Paris-Dauphine, Francia. Es miembro en general del Consejo de la ACM,
+                miembro del Consejo de la Research Data Alliance (RDA) y del World Data System (WDS).
+                <br><br>
+                <b>Tema de la conferencia:</b> Compartiendo datos de Covid-19 – Open Science y el Repositorio FAPESP
+                COVID-19 Data Sharing/BR. </p>
+        </article>
+
+        <article class="ponent">
+            <h1>Dr. Francisco Tirado</h1>
+            <img style=float:left; class="ponente2" src="../imgs/franciscoTirado.jpg" />
+            <p>Francisco Tirado es Catedrático de Arquitectura y Tecnología de Computadores en la Universidad
+                Complutense de Madrid. Ha trabajado en diferentes campos dentro de la Arquitectura de Computadores,
+                Procesamiento Paralelo y Automatización del Diseño. Sus áreas de investigación actuales son algoritmos y
+                arquitecturas paralelas, diseño de procesadores. El profesor Tirado ha sido coautor de más de 300
+                publicaciones.
+                Ha participado en la organización de más de 100 conferencias internacionales como presidente general,
+                miembro del comité
+                directivo, presidente del programa, miembro del comité del programa, orador invitado y presidente de la
+                sesión. Ha sido
+                director del CSC (Centro de Supercomputación) y del Parque Científico de Madrid. El Prof. Tirado es
+                Catedrático de la
+                Sociedad Española de Informática Científica (SCIE), Doctor “honoris causa” por la Universidad Nacional
+                de Asunción,
+                Universidad Nacional de San Agustín, Universidad Nacional de La Plata y Universidad de Almería. El Prof.
+                Tirado es
+                miembro senior de IEEE, miembro de la Sección de Computación de la Academia Europea y ha recibido el
+                Premio Nacional de
+                Informática de España 2013.
+                <br><br>
+                <b>Tema de la conferencia:</b> Evolución de las arquitecturas para HPC y BIG DATA </p>
+        </article>
+
+        <article class="ponent">
+            <h1>Dr. Raimundo Macêdo</h1>
+            <img style=float:left; class="ponente3" src="../imgs/mancedo.jpg" />
+            <p>Raimundo Macêdo es profesor titular en el Departamento de Ciencias de la Computación y jefe del
+                Laboratorio de Sistemas Distribuidos (LaSiD) de la Universidad Federal de Bahía (UFBA) en Brasil. Tiene
+                un Ph.D. en Ciencias de la Computación de la Universidad de Newcastle upon Tyne (Inglaterra).
+                Es el actual presidente de la Sociedad Brasileña de Computación (SBC) y consejero de la IFIP. Fue
+                miembro del Comité Directivo de CLEI de 2011 a 2016.
+                El Prof. Macêdo ha participado y coordinado varios proyectos de investigación con diferentes
+                instituciones de investigación brasileñas e internacionales, cubriendo muchos aspectos de los sistemas
+                distribuidos confiables (algoritmos, arquitecturas e implementaciones), y formó parte del comité de
+                programa de numerosas conferencias sobre el área de sistemas confiables, incluyendo IEEE / IFIP DSN,
+                IEEE SRDS, LADC (Simposio Latinoamericano de Computación Dependiente), EDCC (Conferencia Europea de
+                Computación Dependiente), entre otros. Actualmente es miembro del comité directivo de SRDS (Simposio
+                Internacional sobre Sistemas Distribuidos Confiables). Sus intereses de investigación incluyen sistemas
+                distribuidos confiables autogestionables y sistemas ciberfísicos.
+                <br><br>
+                <b> Tema de la conferencia:</b> Tolerancia a fallos en sistemas distribuidos dinámicos.</p>
+        </article>
+        <article class="ponent">
+            <h1>Dr. Raimundo Macêdo</h1>
+            <img style=float:left; class="ponente3" src="../imgs/miguel.jpg" />
+            <p>Miguel Paredes Quiñones es miembro del personal de investigación del grupo de optimización y simulación
+                de recursos naturales de IBM Research, ubicado en São Paulo, Brasil. Obtuvo su doctorado en ingeniería
+                eléctrica en la Universidad de Campinas y su maestría en Ingeniería Eléctrica en la Universidad Estadual
+                de São Paulo. Actualmente investiga técnicas de optimización para simulación de sistemas físicos
+                mediante IA.
+
+                Es embajador cuántico en IBM. Sus principales intereses son: Programación de enteros mixtos no lineales,
+                Optimización convexa,Técnicas de relajación (optimización), Algoritmos de optimización cuántica.
+                <br><br>
+                <b>Tema de la conferencia:</b> “Quantum Computing” – La computación cuántica en la resolución eficiente
+                de problemas..</p>
+        </article>
+        <article class="ponent">
+            <h1>Dr. Raimundo Macêdo</h1>
+            <img style=float:left; class="ponente3" src="../imgs/roberthMinga.jpg" />
+            <p>Roberth Minga Vallejo es Cloud Marketing Lead en Microsoft Latam Región Sur. Encargado de la estrategia
+                de marketing para soluciones en la nube en organizaciones de Ecuador, Perú, Bolivia, Paraguay y Uruguay.
+                Cuenta más de 20 años de
+                experiencia en organizaciones de tecnología y comercialización de soluciones de software. Ha participado
+                en proyectos
+                de desarrollo bancario, así como en la definición de las estrategias de marketing y comercialización de
+                soluciones como Azure de Microsoft y
+                ha montado empresas que usan el modelo de plataforma. Su formación es Ingeniería en Sistemas, cuenta con
+                una Maestría en
+                Administración de empresas y una certificación en Transformación Digital del MIT.
+                <br><br>
+                <b>Tema de la conferencia:</b> “Platform Revolution – La evolución de las plataformas”. Cómo las
+                plataformas están transformando las economías..</p>
+        </article>
+    </section>
+    <!-- se coloca donde no se modifica la informacion publicidad-->
+    <aside class="modulosPrincipales">
+        Imagen de publicidad
+    </aside>
+    <footer class="piepag">
+        <h6>Derechos reservados UTPL 2020 by:@Snrosales</h6>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+/*La hoja de estilos siempre ataca a las etiquetas o clases*/
+/*body{ background-color: chartreuse;}*/
+/*para estandarizar , a todo el docuemento darle un padding de 0 y margin 0*/
+*{
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /*background-color: #000000;*/
+   /* background-color: rgba(24, 23, 128, 0.377);*/
+    /**Estrandarizar el tipo de fuente de la clase/
+    /*Si no encuentra verdana intenta poner geneva*/
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;*/
+    font-family: 'Segoe UI';
+}
+
+header.cabeceraPrincipal {
+    /*background-color: rgb(247, 109, 17);*/
+    background: -webkit-linear-gradient(90deg, rgb(236, 236, 231) 10%, rgb(17, 6, 65) 90%);
+    color: #ffffff;
+    width: 95%;
+    margin: 0 auto;
+    border-bottom: 2px solid #000000;
+
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+   /* background-color: rgb(231, 230, 231);*/
+   text-align: center;
+   padding: 2em;
+   color: rgb(26, 18, 99);
+}
+main section.contenedor{
+    padding: 1em;
+    color: black;
+}
+
+header.cabeceraPrincipal img {
+    max-width: 100%;
+    display: inline-block;
+    /* arriba y abajho tenga 1em y a los lados 1em*/
+    padding: 1em 1em;
+    vertical-align: top;
+   
+}
+
+header.cabeceraPrincipal h1 {
+    /*Tamanio de la fuente*/ 
+    font-size: 1em;
+    padding: 3em;
+    width: 60%;
+    display: inline-block;
+    /* Una sombra*/
+    text-shadow: rgb(32, 32, 32)2px 2px 1px;
+}
+nav.menuPrincipal, .modulosPrincipales,
+.piePag {
+    width: 95%;
+    background-color: #180f3b;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.5em, 0.5em;  
+
+}
+
+nav.menuPrincipal a {
+    
+    color:#ffffff;
+    padding: 1px 30px;
+    text-decoration: none;
+}
+/*para definir un estilo cuando el raton pasa sobre el enlace*/
+nav.menuPrincipal a:hover {
+    background-color: rgb(238, 240, 238);
+    color: black;
+
+   
+}
+
+section.slider {
+    width: 95%;
+  /*  margen para que este centrado*/
+    margin: auto;
+    /*Para los elementos que esten fuera que se salen no se vean*/
+    overflow: hidden;
+}
+.slider ul{
+ /*Una imagen alado de la otra*/
+    display : flex;
+    padding: 0;
+    /* un espacio al ul*/
+    width: 300%;
+    /*para animar, que dure 20 segundos y que sea infinito*/
+    animation: cambio 10s infinite;
+    /*Cuando lelgue al 100 regresa desde 55, 45*/
+    animation-direction: alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    
+}
+
+.slider img{
+    width:100%;
+    display:center;
+}
+/*La paradas son los keyframes a cambio
+el margin left de 0, del 0 al 20%(4 segundos) va a estar ahi  la imagen 
+del 20% al 25%, el tiempo que tarda la transicion de una imagen a otra
+del 25% al 45% es el tiempo qeu va aestar la segunda imagen
+
+*/
+@keyframes cambio{
+0% {margin-left: 0;}
+20%{margin-left: 0;}
+
+35%{margin-left: -100%;}
+55%{margin-left: -100%;}
+
+85%{margin-left: -200%;}
+100%{margin-left: -200%;}
+
+}
+
+.servicios{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+ 
+}
+
+.servicios article.noticias{
+    width: 30%;
+    display: inline-block;
+}
+.servicios article.noticias img{
+    display: block;
+    margin: auto;
+    padding: 1em;
+    
+
+}
+
+.servicios article.noticias h3{
+    font-size: 1.7em;
+    padding: 1em 0 0 0;
+    color: rgb(255, 251, 11);
+ 
+}
+
+.servicios article.noticias p{
+    text-align: justify;
+    padding: 1em 1em;
+    font-size: 0.9em;
+    color: black;
+}
+.segundPart h1{
+    padding: 1em;
+    text-align: center;
+    color: rgb(95, 91, 91);
+}
+.segundPart p{
+    text-align: center;
+}
+.segundPart img{
+    padding: 2em 5.5em;
+}
+
+.piePag img{
+    width: 100%;
+    /*
+    background-color: rgb(31, 32, 32);
+    color: rgb(96, 97, 99);
+    text-align: center;
+    height: 50px;
+    */
+}
+.piePag h6{
+    padding: 2em 0;
+
+}
+
+.ponentes .ponent{
+    padding-left: 1em;
+    display: inline-block;
+}
+.ponentes img{
+    padding: 1em;
+    
+}
+.ponentes article.ponent p, .campusT{
+    padding: 3em 4em;
+    font-size: 0.9em;
+    text-align: justify
+ 
+}
+.ponentes h1{ 
+    color: rgb(240, 224, 6);
+    padding-left: 1em;
+}
+.grupo{
+    padding: 0.5em 0;
+
+    
+}
+
+/*un mediaquery son como condicionales, el siguiente solo va a ser cundod etecte la resolucion del tama;o*/
+/* cuando la resolucion sea de 500px*/
+@media only screen and (max-width: 750px) {/*Corregir la distacncia de los botones de  navegacion*/
+    header.cabeceraPrincipal {
+
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid #000000;
+        background-color:  rgb(20, 19, 82)2px 2px 1px;
+
+    }
+
+    header.cabeceraPrincipal img {
+        max-width: 100%;
+        display: inline-block;
+        /* arriba y abajho tenga 1em y a los lados 1em*/
+        padding: 0.5em 0.5em;
+        vertical-align: top;
+    }
+
+    header.cabeceraPrincipal h1 {
+        font-size: 1em;
+        padding: 1em;
+        width: 50%;
+        display: inline-block;
+        text-shadow: rgb(32, 32, 32)2px 2px 1px;
+    }
+    .segundPart img {
+        width: 80%;
+        padding: 2em 5.5em;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    header.cabeceraPrincipal {
+        text-align: center;
+        width: 95%;
+       
+    }
+
+    header.cabeceraPrincipal h1 {
+
+        font-size: 1em;
+        padding: 1em;
+        width: 100%;
+        display: block;
+        text-shadow: rgb(32, 32, 32)2px 2px 1px;
+    }
+
+    nav.menuPrincipal {
+        height: 195px;
+       
+    }
+
+    nav.menuPrincipal a {
+        color: white;
+        padding: 6px 30px;
+        display: block;
+       
+    }
+
+    .servicios article.noticias {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .segundPart img {
+        width: 70%;
+        padding: 1em 5.5em;
+
+    }
+
+}
+/* The footer is fixed to the bottom of the page -------------------------------*/
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.piePag{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.piePag .footer-left,
+.piePag .footer-center,
+.piePag .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.piePag .footer-left{
+	width: 30%;
+}
+
+.piePag h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.piePag .footer-left img{
+	width: 50%;
+}
+
+.piePag h3 span{
+	color:  #e0ac1c;
+}
+
+/* Footer links */
+
+.piePag .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.piePag .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.piePag .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.piePag .footer-center{
+	width: 35%;
+}
+
+
+.piePag .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.piePag .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.piePag .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.piePag .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.piePag .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.piePag .footer-right{
+	width: 30%;
+}
+
+.piePag .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.piePag .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.piePag .footer-icons{
+	margin-top: 25px;
+}
+
+.piePag .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.piePag .footer-left,
+	.piePag .footer-center,
+	.piePag .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.piePag .footer-center i{
+		margin-left: 0;
+	}
+
+}
+form{
+	width:300px;
+	padding:40px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+    display:block;
+    align-items: center;
+   
+}
+form input[type="text"],[type="password"],[type="email"] {
+	width:180px;
+	padding:8px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:5px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+    display:inline-block;
+    
+}
+
+form button {
+    width:100px;
+    height: 30px;
+    padding:3px 10px;
+    border-radius:3px;
+    background-color: rgb(57, 29, 214);
+    border-radius: 10px;
+}
+
+/*Campus*/
+.campus h1{
+    margin: 0em 2em;
+    
+}
+.campus h3{
+    text-align: center;
+}
+
+.campus img{
+    
+    align-content: center;
+    border: 15px solid;
+    border-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.175);
+    margin: 1em 6em;
+    
+    
+}
+
+
+/*Tarifas*/
+.tarifasS {
+    text-align: left;
+    margin: 0em 5em;
+}
+.tarifas {
+    margin: 1em 5em;
+}
+/*tabla PHP*/
+.containerTable{
+    width: 90%;
+    background: white ;
+    margin: 50px auto;
+    /*Definir la cantidad de columnas, cada columna ocupa el 10%*/
+    grid-template-columns: repeat(6, 13%) ;
+    display: grid;
+}
